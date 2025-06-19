@@ -92,7 +92,7 @@ export default function AboutSection() {
           >
             <motion.div whileHover={{ y: -5 }} transition={{ type: "spring" }}>
               <Image
-                src="/assets/skills/next.js.svg"
+                src="/assets/skills/Next.js.svg"
                 alt="next.js"
                 width={50}
                 height={50}
