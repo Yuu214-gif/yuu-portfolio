@@ -111,10 +111,10 @@ export default function HeroSection() {
           >
             <div className="relative w-full h-full max-w-xl aspect-[500/450]">
               <Image
-                src="/assets/images/hero.png"
+                src="/assets/images/my-profile.jpg"
                 alt="Front-End Developer Wahyu"
                 fill
-                className="object-contain"
+                className="rounded-lg object-cover shadow-md"
                 priority
               />
             </div>

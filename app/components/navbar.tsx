@@ -344,11 +344,13 @@ export default function Navbar() {
                   transition={{ delay: 0.3 }}
                 >
                   <motion.a
-                    href="#"
+                    href="https://github.com/Yuu214-gif"
                     aria-label="GitHub"
                     className="hover:opacity-80 transition-opacity"
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaGithub className="w-6 h-6 text-slate-700 hover:text-black" />
                   </motion.a>
@@ -362,11 +364,13 @@ export default function Navbar() {
                     <FaLinkedin className="w-6 h-6 text-slate-700 hover:text-blue-700" />
                   </motion.a>
                   <motion.a
-                    href="#"
+                    href="https://www.instagram.com/yuu.ta_21/"
                     aria-label="Instagram"
                     className="hover:opacity-80 transition-opacity"
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaInstagram className="w-6 h-6 text-slate-700 hover:text-pink-500" />
                   </motion.a>
