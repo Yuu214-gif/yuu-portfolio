@@ -95,14 +95,14 @@ function ProjectCard({ img, title, tech, link }: ProjectCard) {
   return (
     <motion.div 
       className="group block overflow-hidden rounded-md shadow-lg transition-all dark:shadow-gray-800/50 hover:shadow-xl"
-                  whileHover={{ scale: 1.05 }}
+      whileHover={{ scale: 1.02 }}
     >
       <div className="relative h-48 overflow-hidden">
         <Image
           src={img}
           alt={title}
           fill
-          className="object-fill transition-transform duration-300"
+          className="object-top transition-transform duration-300"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>

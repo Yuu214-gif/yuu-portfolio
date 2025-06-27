@@ -15,6 +15,7 @@ const navItems = [
   { id: "about", label: "About" },
   { id: "skills", label: "Skills & Tech Stack" },
   { id: "projects", label: "Projects" },
+  { id: "certificate", label: "Certificate" }
 ];
 
 const mobileMenuVariants = {
@@ -281,7 +282,7 @@ export default function Navbar() {
             <FaGithub className="w-6 h-6 text-slate-700 hover:text-black transition-colors" />
           </motion.a>
           <motion.a
-            href="#"
+            href="https://www.linkedin.com/in/wahyu-eka-pratama-037871310?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BaiIaDVRzRU%2BVIISz%2F%2FsBeA%3D%3D"
             aria-label="LinkedIn"
             className="hover:opacity-80 transition-opacity"
             whileHover={{ y: -2 }}
@@ -355,7 +356,7 @@ export default function Navbar() {
                     <FaGithub className="w-6 h-6 text-slate-700 hover:text-black" />
                   </motion.a>
                   <motion.a
-                    href="#"
+                    href="https://www.linkedin.com/in/wahyu-eka-pratama-037871310?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BaiIaDVRzRU%2BVIISz%2F%2FsBeA%3D%3D"
                     aria-label="LinkedIn"
                     className="hover:opacity-80 transition-opacity"
                     whileHover={{ y: -2 }}

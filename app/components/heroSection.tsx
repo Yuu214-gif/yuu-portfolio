@@ -47,10 +47,10 @@ export default function HeroSection() {
                     type: "spring",
                     stiffness: 300,
                     damping: 15,
-                    delay: 0.6
+                    delay: 0.1
                   }}
                   whileHover={{ 
-                    scale: 1.05,
+                    scale: 1.02,
                     boxShadow: "0 5px 15px -3px rgba(59, 130, 246, 0.3)"
                   }}
                   whileTap={{ scale: 0.98 }}
@@ -68,10 +68,10 @@ export default function HeroSection() {
                     type: "spring",
                     stiffness: 300,
                     damping: 15,
-                    delay: 0.7
+                    delay: 0.1
                   }}
                   whileHover={{ 
-                    scale: 1.05,
+                    scale: 1.02,
                     backgroundColor: "#1d4ed8",
                     color: "#ffffff",
                     borderColor: "#1d4ed8"
