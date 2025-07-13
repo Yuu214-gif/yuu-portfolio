@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Marquee } from "@/components/magicui/marquee";
+import { motion } from "framer-motion";
 
 export default function SkillsSection() {
   const Skills = [
@@ -87,12 +88,16 @@ export default function SkillsSection() {
     <section id="skills">
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden bg-gray-200 pt-16">
         <div className="container mx-auto px-4">
-        <div className=" my-8 justify-start text-center">
+        <motion.div className=" my-8 justify-start text-center"
+        initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}>
           <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold mb-2 text-center">Skills & Tech Stack</h1>
           <p className="text-gray-600 dark:text-gray-300 text-center text-base xl:text-lg">
             Tech stack that i often use
           </p>
-        </div>
+        </motion.div>
         </div>
         <Marquee pauseOnHover className="[--duration:60s]">
           {firstRow.map((skill) => (

@@ -196,7 +196,10 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="relative">
-          <div className="xl:flex hidden md:hidden gap-6 text-md text-slate-700 font-medium relative">
+          <motion.div className="xl:flex hidden md:hidden gap-6 text-md text-slate-700 font-medium relative"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}>
             {navItems.map((item, index) => (
               <motion.button
                 key={item.id}
@@ -214,7 +217,7 @@ export default function Navbar() {
                 {item.label}
               </motion.button>
             ))}
-          </div>
+          </motion.div>
 
           <motion.span
             className="absolute bottom-0 h-[2px] bg-blue-600 transition-all duration-300 ease-in-out"
