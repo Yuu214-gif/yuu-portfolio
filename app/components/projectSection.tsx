@@ -67,8 +67,8 @@ export default function ProjectSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-3xl font-bold mb-2">My Projects</h1>
-          <p className="text-gray-600 dark:text-gray-300">
+          <h1 className="text-2xl md:text-3xl font-bold mb-2 text-center xl:text-4xl">My Projects</h1>
+          <p className="text-gray-600 dark:text-gray-300 text-base text-center">
             Some of my recent works
           </p>
         </motion.div>
@@ -108,9 +108,9 @@ function ProjectCard({ img, title, tech, link }: ProjectCard) {
       </div>
 
       <div className="bg-white p-5 dark:bg-gray-800">
-        <h3 className="text-xl font-semibold">{title}</h3>
+        <h3 className="text-base md:text-xl font-semibold">{title}</h3>
         <div className="flex items-center justify-between">
-          <span className="inline-block py-1 text-sm font-medium text-gray-800 dark:text-gray-200">
+          <span className="inline-block py-1 text-xs font-medium text-gray-800 dark:text-gray-200">
             {tech}
           </span>
           <motion.div
@@ -119,7 +119,7 @@ function ProjectCard({ img, title, tech, link }: ProjectCard) {
           >
             <a
               href={link}
-              className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
+              className="flex items-center text-xs md:text-sm gap-2 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors"
               target="_blank"
               rel="noopener noreferrer"
             >

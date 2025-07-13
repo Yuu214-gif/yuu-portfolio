@@ -87,9 +87,9 @@ export default function SkillsSection() {
     <section id="skills">
       <div className="relative flex w-full flex-col items-center justify-center overflow-hidden bg-gray-200 pt-16">
         <div className="container mx-auto px-4">
-        <div className="my-8 justify-start">
-          <h1 className="text-3xl font-bold mb-2">Skills & Tech Stack</h1>
-          <p className="text-gray-600 dark:text-gray-300">
+        <div className=" my-8 justify-start text-center">
+          <h1 className="text-2xl md:text-3xl xl:text-4xl font-bold mb-2 text-center">Skills & Tech Stack</h1>
+          <p className="text-gray-600 dark:text-gray-300 text-center text-base xl:text-lg">
             Tech stack that i often use
           </p>
         </div>

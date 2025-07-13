@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div className="max-w-3xl mx-auto text-center">
           {/* Headline with scroll animation */}
           <motion.h1
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
+            className="text-2xl md:text-4xl lg:text-5xl font-bold text-white mb-6"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -25,7 +25,7 @@ export default function HeroSection() {
 
           {/* Description text with scroll animation */}
           <motion.p
-            className="text-lg md:text-xl text-gray-500 mb-8 max-w-2xl mx-auto"
+            className="text-sm md:text-xl text-gray-500 mb-8 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -41,7 +41,7 @@ export default function HeroSection() {
 
           {/* CTA Button with scroll and hover animation */}
           <motion.button
-            className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+            className="bg-blue-600 hover:bg-blue-700 text-white text-xs md:text-base font-semibold py-3 px-8 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
             initial={{ opacity: 0, y: 30, scale: 0.95 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true }}

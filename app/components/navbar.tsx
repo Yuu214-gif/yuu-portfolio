@@ -195,7 +195,7 @@ export default function Navbar() {
         </motion.div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:block relative">
+        <div className="relative">
           <div className="flex gap-6 text-md text-slate-700 font-medium relative">
             {navItems.map((item, index) => (
               <motion.button
@@ -227,7 +227,7 @@ export default function Navbar() {
 
         {/* Mobile Hamburger Button */}
         <motion.div
-          className="md:hidden flex items-center gap-6"
+          className="flex xl:hidden items-center gap-6"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3 }}
@@ -265,7 +265,7 @@ export default function Navbar() {
 
         {/* Desktop Social Icons */}
         <motion.div
-          className="hidden md:flex gap-6"
+          className="hidden xl:flex gap-6"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3 }}
@@ -309,7 +309,7 @@ export default function Navbar() {
         <AnimatePresence>
           {mobileMenuOpen && (
             <motion.div
-              className="md:hidden absolute top-full left-0 right-0 bg-gray-100 shadow-lg py-4 px-6 overflow-hidden"
+              className="xl:hidden absolute top-full left-0 right-0 bg-gray-200 shadow-lg py-4 px-6 overflow-hidden"
               initial="closed"
               animate="open"
               exit="closed"
@@ -322,7 +322,7 @@ export default function Navbar() {
                     onClick={() => scrollToSection(item.id, index)}
                     className={`text-left py-3 px-4 rounded-md transition-colors duration-300 ${
                       activeIndex === index
-                        ? "bg-blue-50 text-blue-600"
+                        ? "bg-gray-300 text-white"
                         : "text-slate-700 hover:bg-gray-50"
                     }`}
                     aria-current={activeIndex === index ? "page" : undefined}

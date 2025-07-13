@@ -58,8 +58,8 @@ export default function CertificateSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-3xl font-bold leading-normal">My Certificate</h1>
-          <p className="text-gray-600">My recent certificate</p>
+          <h1 className="text-2xl md:text-3xl font-bold leading-normal text-center xl:text-4xl">My Certificate</h1>
+          <p className="text-gray-600 text-center text-base">My recent certificate</p>
         </motion.div>
         <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
@@ -91,7 +91,7 @@ function CertificateCardComponent({
       className="group block overflow-hidden rounded-md shadow-lg transition-all dark:shadow-gray-800/50 hover:shadow-xl"
       whileHover={{ scale: 1.02 }}
     >
-      <div className="relative h-60 overflow-hidden">
+      <div className="relative h-50 md:h-60 overflow-hidden">
         <Image
           src={img}
           alt={`Certificate ${index + 1}`}

@@ -9,31 +9,7 @@ export default function AboutSection() {
     >
 
       {/* Container untuk gambar dan konten */}
-      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-8 md:gap-12">
-        {/* Bagian Gambar (kiri) - Animasi dari kiri */}
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{
-            type: "spring",
-            stiffness: 60,
-            damping: 10,
-            delay: 0.1,
-          }}
-          className="w-full md:w-1/2 flex justify-start"
-        >
-          <div className="relative w-full max-w-md aspect-square">
-            <Image
-              src="/assets/images/my-profile.jpg"
-              alt="Wahyu - Front End Developer"
-              width={500}
-              height={500}
-              className="rounded-lg object-cover shadow-md"
-              quality={90}
-            />
-          </div>
-        </motion.div>
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12">
 
         {/* Bagian Teks (kanan) - Animasi turun */}
         <motion.div
@@ -46,9 +22,9 @@ export default function AboutSection() {
             damping: 10,
             delay: 0.3,
           }}
-          className="w-full md:w-1/2 space-y-6"
+          className="w-full space-y-6"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-2xl md:text-4xl font-bold text-gray-800 text-center">
             About Me
           </h2>
 
@@ -57,14 +33,14 @@ export default function AboutSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
-            className="text-lg text-gray-600 leading-relaxed"
+            className="text-base md:text-xl xl:text-2xl text-gray-600 leading-relaxed text-center"
           >
             A{" "}
             <span className="text-blue-600 font-medium">
               Front-End Developer
             </span>{" "}
             and{" "}
-            <span className="text-purple-600 font-medium">UI/UX Designer</span>,
+            <span className="text-blue-600 font-medium">UI/UX Designer</span>,
             I love converting designs from figma into functional code
           </motion.p>
 
@@ -73,7 +49,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.7 }}
-            className="text-lg text-gray-600 leading-relaxed"
+            className="text-base md:text-xl xl:text-2xl text-gray-600 leading-relaxed text-center"
           >
             The tools I often use are{" "}
             <span className="font-semibold">Next.js</span>,{" "}
@@ -88,7 +64,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.9 }}
-            className="flex flex-wrap gap-8 pt-4"
+            className="flex flex-wrap gap-8 pt-4 items-center justify-center"
           >
             <motion.div whileHover={{ y: -5 }} transition={{ type: "spring" }}>
               <Image

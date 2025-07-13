@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 
 export const metadata: Metadata = {
-  title: "Personal Portfolio",
+  title: "Yuu Portfolio | Front-End Developer",
   description: "My Personal Portfolio for showcasing projects and skills",
   icons: "/assets/images/main-logo.svg"
 };
