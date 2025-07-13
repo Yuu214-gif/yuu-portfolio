@@ -50,7 +50,7 @@ export default function CertificateSection() {
 
   return (
     <section id="certificate" className="bg-gray-200">
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-20">
         <motion.div
           className="mb-8 justify-start"
           initial={{ opacity: 0, y: 20 }}
