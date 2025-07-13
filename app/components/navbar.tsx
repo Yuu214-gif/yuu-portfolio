@@ -195,11 +195,15 @@ export default function Navbar() {
         </motion.div>
 
         {/* Desktop Navigation */}
-        <div className="relative">
+        <motion.div className="hidden xl:relative xl:inline"
+        initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}>
           <motion.div className="xl:flex hidden md:hidden gap-6 text-md text-slate-700 font-medium relative"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}>
+          transition={{ duration: 0.3 }}
+          >
             {navItems.map((item, index) => (
               <motion.button
                 key={item.id}
@@ -226,7 +230,7 @@ export default function Navbar() {
             layoutId="underline"
             transition={{ type: "spring", stiffness: 500, damping: 30 }}
           />
-        </div>
+        </motion.div>
 
         {/* Mobile Hamburger Button */}
         <motion.div
