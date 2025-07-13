@@ -196,7 +196,7 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <div className="relative">
-          <div className="flex gap-6 text-md text-slate-700 font-medium relative">
+          <div className="xl:flex hidden md:hidden gap-6 text-md text-slate-700 font-medium relative">
             {navItems.map((item, index) => (
               <motion.button
                 key={item.id}
