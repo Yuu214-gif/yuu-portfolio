@@ -329,7 +329,7 @@ export default function Navbar() {
                     onClick={() => scrollToSection(item.id, index)}
                     className={`text-left py-3 px-4 rounded-md transition-colors duration-300 ${
                       activeIndex === index
-                        ? "bg-gray-300 text-white"
+                        ? "bg-gray-300 text-blue-500"
                         : "text-slate-700 hover:bg-gray-50"
                     }`}
                     aria-current={activeIndex === index ? "page" : undefined}
